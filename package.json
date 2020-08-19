@@ -1,0 +1,11 @@
+{
+  "name": "min-walk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "min-walk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oleksandr Skrypka",
+  "license": "ISC"
+}
