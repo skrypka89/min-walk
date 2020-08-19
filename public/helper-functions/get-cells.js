@@ -1,6 +1,6 @@
-const checkCell = require("./check-cell");
+import checkCell from './check-cell.js';
 
-const getCells = (gridList, gridValues, startX, startY, endX, endY) => {
+export default function getCells(gridList, gridValues, startX, startY, endX, endY) {
   let countingEnd = false;
   const cells = [{ x: startX, y: startY }];
   let cellNumber = 0;
@@ -27,6 +27,4 @@ const getCells = (gridList, gridValues, startX, startY, endX, endY) => {
   }
 
   return cells;
-};
-
-module.exports = getCells;
+}

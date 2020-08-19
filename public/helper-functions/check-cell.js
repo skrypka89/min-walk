@@ -1,7 +1,8 @@
-const stayInGrid = require('./stay-in-grid');
+import stayInGrid from './stay-in-grid.js';
+
 let counter = 0;
 
-const checkCell = (gridList, x, y, cells, gridValues) => {
+export default function checkCell(gridList, x, y, cells, gridValues) {
   const inside = stayInGrid(gridList, x, y);
 
   if (!inside) return;
@@ -12,6 +13,4 @@ const checkCell = (gridList, x, y, cells, gridValues) => {
   if (found) return;
 
   cells[++counter] = { x, y };
-};
-
-module.exports = checkCell;
+}

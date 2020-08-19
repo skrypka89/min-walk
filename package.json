@@ -4,8 +4,11 @@
   "description": "",
   "main": "min-walk.js",
   "scripts": {
-    "start": "node min-walk.js"
+    "start": "node src/app.js"
   },
   "author": "Oleksandr Skrypka",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

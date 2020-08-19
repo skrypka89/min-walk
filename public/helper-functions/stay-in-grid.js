@@ -1,4 +1,4 @@
-const stayInGrid = (gridList, x, y) => {
+export default function stayInGrid(gridList, x, y) {
   const maxX = gridList.length - 1;
   const maxY = gridList[0].split('').length - 1;
 
@@ -9,6 +9,4 @@ const stayInGrid = (gridList, x, y) => {
   if (y < 0 || y > maxY) return false;
 
   return true;
-};
-
-module.exports = stayInGrid;
+}

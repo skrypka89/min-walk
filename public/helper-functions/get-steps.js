@@ -1,6 +1,6 @@
-const getStepsArray = require("./get-steps-array");
+import getStepsArray from './get-steps-array.js';
 
-const getSteps = cells => {
+export default function getSteps(cells) {
   const path = [...cells];
   path[0].steps = 0;
 
@@ -19,9 +19,5 @@ const getSteps = cells => {
     path[i].steps = Math.min(...stepsArray) + 1;
   }
 
-  // return path;
-
   return path[path.length - 1].steps;
-};
-
-module.exports = getSteps;
+}
