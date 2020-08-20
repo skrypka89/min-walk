@@ -1,5 +1,6 @@
 import checkCell from './check-cell.js';
 
+// numerate cells which might be necessary for our walking
 export default function getCells(gridList, gridValues, startX, startY, endX, endY) {
   let countingEnd = false;
   const cells = [{ x: startX, y: startY }];

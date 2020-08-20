@@ -1,5 +1,6 @@
 import getStepsArray from './get-steps-array.js';
 
+// getSteps returns the number of steps to the end cell
 export default function getSteps(cells) {
   const path = [...cells];
   path[0].steps = 0;

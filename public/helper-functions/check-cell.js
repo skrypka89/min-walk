@@ -2,6 +2,7 @@ import stayInGrid from './stay-in-grid.js';
 
 let counter = 0;
 
+// an intermediate function used for checking cells at the numeration
 export default function checkCell(gridList, x, y, cells, gridValues) {
   const inside = stayInGrid(gridList, x, y);
 

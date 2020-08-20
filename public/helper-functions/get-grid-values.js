@@ -1,3 +1,4 @@
+// gridValues is a two-dimensional array with input data (grid)
 export default function getGridValues(gridList) {
   let gridValues = [];
   let gridRow = [];

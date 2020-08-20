@@ -1,3 +1,4 @@
+// check whether coordinates (x, y) are within the grid
 export default function stayInGrid(gridList, x, y) {
   const maxX = gridList.length - 1;
   const maxY = gridList[0].split('').length - 1;
